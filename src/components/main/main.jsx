@@ -21,7 +21,7 @@ const Main = () => {
       }
     };
     getData();
-  }, []);
+  }, [selectedCategory]);
 
   return (
     <Stack>
@@ -34,7 +34,7 @@ const Main = () => {
           <Typography variant={"h4"} fontWeight={"bold"} mb={2}>
             {selectedCategory} <span style={{ color: colors.secondary }}>videos</span>
           </Typography>
-          <Videos video={videos} />
+          <Videos videos={videos} />
         </Container>
       </Box>
     </Stack>

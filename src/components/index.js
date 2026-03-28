@@ -7,3 +7,4 @@ export { default as VideoDetail } from "./videoDetail/videoDetail";
 export { default as Searchbar } from "./searchBar/searchBar";
 export { default as Category } from "./category/category";
 export { default as Videos } from "./videos/videos";
+export { default as VideoCard } from "./videoCard/videoCard";
