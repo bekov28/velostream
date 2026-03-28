@@ -13,6 +13,7 @@
   background: rgb(114, 113, 113);
   border-radius: 10px;
   height: 200px;
+  width: 100%;
 }
 
 ::-webkit-scrollbar-track {

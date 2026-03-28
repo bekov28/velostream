@@ -1,6 +1,12 @@
 # VeloStream 🎥
 
-**VeloStream** is a youtube video streaming platform built in React.js and Material UI. 
+**VeloStream** is a youtube video streaming platform built in React.js and Material UI (Youtube clone).
+
+Tech Stack used I used: 
+1. React.js 19 (JavaScript Library for UI)
+2. React-router-dom for handling Client-side routing in React (used BrowserRouter, Routes, Route and Links mostly)
+2. Material UI for custom UI designing
+3. Random API for Youtube videos
 
 # Getting Started with Create React App
 
