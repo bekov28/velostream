@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, CircularProgress, Container, Stack, Typography } from "@mui/material";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { colors } from "../../constants/colors";
 import { Category, Videos } from "../";
 import { ApiService } from "../../service/apiService";
