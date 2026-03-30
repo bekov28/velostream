@@ -5,11 +5,12 @@
 Tech Stack used:
 
 1. React.js 19 (JavaScript Library for UI)
-2. React-router-dom for handling Client-side routing in React (used BrowserRouter, Routes, Route and Links mostly)
+2. React-router-dom for handling Client-side routing in React (BrowserRouter, Routes, Route and Links, useNavigate(), useParams())
 3. Material UI for custom UI designing
 4. Rapid API for Youtube videos (rapidapi.com, Youtube V3 API) - Basic Plan(free version)
 5. Moment.js Library for manipulating and displaying dates and times (moment(date).fromNow())
 6. Used TanStack Query for client side caching to prevent frequent API requests to the server when changes are made
+7. Used React Hoooks: useState(), useEffect(), useNavigate(), useParams()
 
 # Getting Started with Create React App
 
