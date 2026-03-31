@@ -3,6 +3,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { ApiService } from "../../service/apiService";
 import { Box, CircularProgress } from "@mui/material";
+import ReactPlayer from "react-player";
 
 const VideoDetail = () => {
   const { id } = useParams();
@@ -20,14 +21,21 @@ const VideoDetail = () => {
   //   statistics: { viewCount, likeCount, commentCount },
   // } = data.items[0];
 
+  console.log(data);
+
   return (
-    <Box>
-      {isLoading && (
-        <Box display="flex" justifyContent="center" p={5}>
-          <CircularProgress color="secondary" />
+    <Box minHeight={"90vh"} mb={10}>
+      <Box display={"flex"}>
+        {isLoading && (
+          <Box display="flex" justifyContent="center" p={5}>
+            <CircularProgress color="secondary" />
+          </Box>
+        )}
+        <Box width={"75%"}>
+          <ReactPlayer oEmbedUrl={`https://www.youtube.com/watch?v=${id}`} />
         </Box>
-      )}
-      VideoDetail: {id}
+        <Box width={"25%"}>Suggested videos</Box>
+      </Box>
     </Box>
   );
 };

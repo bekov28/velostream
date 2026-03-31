@@ -1,6 +1,6 @@
 # VeloStream 🎥
 
-**VeloStream** is a youtube video streaming platform built in React.js and Material UI (Youtube clone).
+**VeloStream** is a basic youtube video streaming platform built in React.js and Material UI (Youtube clone).
 
 Tech Stack used:
 
@@ -11,6 +11,9 @@ Tech Stack used:
 5. Moment.js Library for manipulating and displaying dates and times (moment(date).fromNow())
 6. Used TanStack Query for client side caching to prevent frequent API requests to the server when changes are made
 7. Used React Hoooks: useState(), useEffect(), useNavigate(), useParams()
+
+Challenge I faced: 
+While building this youtube-like website, I faced a quota issue with Rapid API where only I only subscribed to the free (basic) plan (200 API calls a month). Initially I used useEffect Hook for client-side API fetching, but whenever I made a change or update even a small part of the project, React re-rendered the site, sending API calls each time and thus, quickly finished the API quota. For this I need to find a solution, so after some investigation, I implemented TanStack Query for caching, and set staleTime for 1 hour so that the fetched data stays on the browser as cached, preventing from API requests whenever I made a change. 
 
 # Getting Started with Create React App
 
