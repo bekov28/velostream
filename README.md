@@ -2,6 +2,11 @@
 
 **VeloStream** is a basic youtube video streaming platform built in React.js and Material UI (Youtube clone).
 
+Characteristics: 
+1. A youtube-like video streaming platform which fetches Youtube API data (video urls, images, channels etc)
+2. User can search videos by categories and click on the video which then navigates the page to the Video Detail page
+3. Availibility of the date and the time on the Video contents to show when the specific video was published
+
 Tech Stack used:
 
 1. React.js 19 (JavaScript Library for UI)
